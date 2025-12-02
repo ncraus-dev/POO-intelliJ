@@ -212,4 +212,8 @@ public class CLI {
     private String[] separate(String input) {
         return input.trim().split("\\s+", 3); // el \\s significa mas de un espacio
     }
+
+    private String prueba(String input) {
+        return input;
+    }
 }
