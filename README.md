@@ -26,7 +26,9 @@ Clases y paquetes principales:
    Alternativamente, si quieres usar Maven:
    - Compilar: `mvn clean compile`
    - Empaquetar: `mvn package`
-   - Ejecutar (si está configurado el plugin exec):  
+   - Buscar el jar en los archivos, copiar el path absoluto
+   - Ir a target
+   - Ejecutar (si está configurado el plugin exec):
      `java -jar Practica-E2_POO-1.0-SNAPSHOT.jar`
 
 ## Estructura (resumen)
