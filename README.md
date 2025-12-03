@@ -8,26 +8,26 @@ El código principal está en el paquete `etsisi.upm`. Contiene las clases y paq
 Clases y paquetes principales:
 - Main — punto de entrada (`public static void main`) para ejecutar la aplicación.
 - CLI — interfaz de línea de comandos y manejo de interacción con el usuario.
-- Fallos — fichero relacionado con la gestión de errores/condiciones (nombre de fichero tal cual en el repo).
 - Testeo — utilidades o ejemplos de pruebas/manual testing incluidos en el repo.
 - Display/Logic/Model — subpaquetes:
-- Model: clases que representan el dominio.
-- Logic: clases con la lógica o reglas de negocio.
+- Model: clases que representan los objetos usados por la lógica.
+- Logic: clases con la lógica o estructuras de objetos del modelo.
 - Display: componentes de presentación/visualización.
 
 ## Requisitos
-- JDK 11+ (se recomienda 17)
+- JDK 17+ (se recomienda 21)
 - IntelliJ IDEA (Community o Ultimate)
 - Maven (el repositorio incluye `pom.xml`)
 
 ## Cómo abrir y ejecutar
 1. Abre IntelliJ → Open → selecciona la carpeta del proyecto.
 2. Configura el Project SDK si hace falta: File → Project Structure → Project SDK.
-3. Ejecuta `etsisi.upm.Main` (o la clase que quieras) con clic derecho → Run.  
+3. Ejecuta `etsisi.upm.Main` con clic derecho → Run.  
    Alternativamente, si quieres usar Maven:
    - Compilar: `mvn clean compile`
+   - Empaquetar: `mvn package`
    - Ejecutar (si está configurado el plugin exec):  
-     `mvn exec:java -Dexec.mainClass="etsisi.upm.Main"`
+     `java -jar Practica-E2_POO-1.0-SNAPSHOT.jar`
 
 ## Estructura (resumen)
 - src/main/java — código (paquete `etsisi.upm` y subpaquetes Display, Logic, Model)
@@ -47,4 +47,4 @@ Clases y paquetes principales:
 Antes de abrir PR, ejecuta la clase principal o los tests relevantes para comprobar que todo funciona.
 
 ## Licencia
-Uso entre el equipo / práctica. Añade la licencia que prefieras si quieres formalizarla.
+Uso entre el equipo / práctica.
